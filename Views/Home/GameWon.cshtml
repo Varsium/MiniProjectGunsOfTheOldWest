@@ -1,0 +1,12 @@
+﻿@model Shooter
+
+<h1>WOW you're a real sharpshooter ! ! </h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Bullets" />
+    <div class="row"> <label class="col-md-3">Firstname</label><input asp-for="Name" required="required" /></div>
+    <div class="row"><label class="col-md-3">Lastname</label><input asp-for="LastName" required="required" /></div>
+    <div class="row"><label class="col-md-3">Email</label> <input asp-for="Email" type="email" required="required" /></div>
+    <div class="row"><label class="col-md-3">Number</label> <input asp-for="Number" type="text"  required="required" /></div>
+    <div class="row"><button type="submit" asp-route-shooter="@Model" asp-action="Summary">Click here to get your price !</button></div>
+</form>

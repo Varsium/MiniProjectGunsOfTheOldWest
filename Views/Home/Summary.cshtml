@@ -1,0 +1,18 @@
+﻿@model Shooter
+
+<div>
+    <h1>Congratz on your win ! you can choose your price ! but first check your personal data </h1>
+    <p>you are : @Model.Name @Model.LastName</p>
+    <p> you won the game with @Model.Bullets left</p>
+    <p>your Email is : @Model.Email</p>
+    <p> your number is : @Model.Number</p>
+    <p>the date sended is : @DateTime.Now</p>
+    <div style="height: 150px"></div>
+    <p> About the author: </p>
+    <p>After looking for a while after a fun game, i decided to make one myself! </p>
+    <p>I'm Leandro and i made this game ! i hope you enjoy it ! i'm 27 years old and i'm learning how to program</p>
+    <div style="height: 150px"></div>
+    <form method="get">
+    <button type="submit" class="btn-success" asp-action="Index">Wanna play again</button>
+    </form>
+    </div>

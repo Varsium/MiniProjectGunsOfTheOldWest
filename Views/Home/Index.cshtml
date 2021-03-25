@@ -1,0 +1,25 @@
+﻿@model Shooter
+@{
+    ViewData["Title"] = "Guns Of the Old West!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Guns Of the Old West!</h1>
+    <form method="post">
+        <button type="submit" id="ShootGun" class="ReloadButtons" asp-action="Shooting" asp-route-bullets="@Model.Bullets"> Shoot!</button>
+        <p>you got @Model.Bullets left to shoot !</p>
+    </form>
+</div>
+
+
+
+<style>
+    #ShootGun {
+        border-radius: 50%;
+        border-style: solid;
+        font-size: 60px;
+        padding: 20%;
+        width: auto;
+        height: auto
+    }
+</style>
